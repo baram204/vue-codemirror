@@ -25,7 +25,9 @@
 
 # Events
 
-To make it easier to handle events, the component converts some codemirror built-in native events into a single vue component event, where you can listen for events from both the component itself and from codemirror. If you need to listen for more and more complex events, you can pass in the event names (Array) you need for the global `Vue.use(, { events: [] })` and the component parameters `:events`, respectively, or by the `this.codemirror.on(event, hanger)` method of the codemirror instance. Here's a list of events:
+핸들러 이벤트를 쉽게 다루기 위해서, 컴포넌트는 몇몇 코드미러 내장 네이티브 이벤트를 단일 뷰 컴포넌트 이베트로 바꾼다, 컴포넌트 자신과 코드미러로부터 온 이벤트를 리슨할 수 있다. 더 많은 이벤트를 리슨하고 싶으면, 이벤트 이름(Array)을  `Vue.use(, { events: [] })` 에 통과시키고 컴포넌트 매개변수 `:events`, 각각을, 혹은  `this.codemirror.on(event, hanger)` 메소드 를 코드미러 인스턴스에 쓴다. 여기 이벤트 목록이 있다:
+
+
 
 **codemirror events list:**
 - scroll
